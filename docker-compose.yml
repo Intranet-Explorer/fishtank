@@ -1,0 +1,82 @@
+services:
+  alpha:
+    build: .
+    container_name: fish-alpha
+    init: true
+    # Docker Desktop VM is often ~8GB. 8g+8g cannot both fit; 3.5g each still beats 1g.
+    # For 8g each: Docker Desktop → Settings → Resources → Memory ≥ 16GB, then bump these.
+    mem_limit: 3.5g
+    memswap_limit: 3.5g
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=512m,mode=1777
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      AGENT_ID: alpha
+      AGENT_ORIGIN: local
+      HOME: /private
+      WORLD_URL: http://host.docker.internal:8080
+      WORLD_TOKEN: ${WORLD_TOKEN}
+      OPENAI_BASE_URL: http://host.docker.internal:11434/v1
+      OPENAI_MODEL: ${OPENAI_MODEL:-mlx-community/Qwen3.6-35B-A3B-4bit}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-local}
+      FETCH_PROXY: http://host.docker.internal:8787
+      TEMPERATURE: "0.7"
+      HEARTBEAT_SEC: ${HEARTBEAT_SEC:-5}
+      MAX_TOOLS_PER_WAKE: ${MAX_TOOLS_PER_WAKE:-48}
+      MAX_TOKENS: ${MAX_TOKENS:-2048}
+      LLM_TIMEOUT_SEC: ${LLM_TIMEOUT_SEC:-180}
+      RUN_TIMEOUT_SEC: ${RUN_TIMEOUT_SEC:-120}
+      DUMMY: ${DUMMY:-0}
+      ENABLE_RUN: "1"
+      IN_CONTAINER: "1"
+    volumes:
+      - ./habitat:/workspace
+      - ./private/alpha:/private
+      # Optional and unsafe (not the published default):
+      # - ${HOME}:${HOME}
+    restart: unless-stopped
+
+  bravo:
+    build: .
+    container_name: fish-bravo
+    init: true
+    mem_limit: 3.5g
+    memswap_limit: 3.5g
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=512m,mode=1777
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      AGENT_ID: bravo
+      AGENT_ORIGIN: local
+      HOME: /private
+      WORLD_URL: http://host.docker.internal:8080
+      WORLD_TOKEN: ${WORLD_TOKEN}
+      OPENAI_BASE_URL: http://host.docker.internal:11434/v1
+      OPENAI_MODEL: ${OPENAI_MODEL:-mlx-community/Qwen3.6-35B-A3B-4bit}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-local}
+      FETCH_PROXY: http://host.docker.internal:8787
+      TEMPERATURE: "1.0"
+      HEARTBEAT_SEC: ${HEARTBEAT_SEC:-5}
+      MAX_TOOLS_PER_WAKE: ${MAX_TOOLS_PER_WAKE:-48}
+      MAX_TOKENS: ${MAX_TOKENS:-2048}
+      LLM_TIMEOUT_SEC: ${LLM_TIMEOUT_SEC:-180}
+      RUN_TIMEOUT_SEC: ${RUN_TIMEOUT_SEC:-120}
+      DUMMY: ${DUMMY:-0}
+      ENABLE_RUN: "1"
+      IN_CONTAINER: "1"
+    volumes:
+      - ./habitat:/workspace
+      - ./private/bravo:/private
+      # Optional and unsafe (not the published default):
+      # - ${HOME}:${HOME}
+    restart: unless-stopped

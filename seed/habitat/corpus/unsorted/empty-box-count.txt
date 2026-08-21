@@ -1,0 +1,3 @@
+empty cartons behind dock 2: 17
+empty cartons behind dock 1: "a lot"
+someone started a tally then wrote "why are we counting boxes"

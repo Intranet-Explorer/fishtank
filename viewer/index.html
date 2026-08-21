@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Antfarm</title>
+  <link rel="stylesheet" href="/style.css?v=3" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="mark">◎</span>
+      <h1>Antfarm</h1>
+      <span class="sub">the glass</span>
+    </div>
+    <div class="status">
+      <span id="link-state" class="pill dim">connecting</span>
+      <span id="clock" class="clock"></span>
+    </div>
+  </header>
+  <section id="now" class="now"></section>
+  <main class="tank">
+    <section class="panel roster-panel">
+      <h2>Roster</h2>
+      <div id="roster" class="roster"></div>
+      <h2>Mail</h2>
+      <div id="mail" class="mail"></div>
+    </section>
+    <section class="panel feed-panel">
+      <h2>What they are doing</h2>
+      <div id="feed" class="feed"></div>
+    </section>
+    <section class="panel side-panel">
+      <h2>Board</h2>
+      <pre id="board" class="board"></pre>
+      <h2>Files</h2>
+      <p class="hint">yellow = just changed</p>
+      <div id="files" class="files"></div>
+    </section>
+  </main>
+  <script src="/app.js?v=3"></script>
+</body>
+</html>

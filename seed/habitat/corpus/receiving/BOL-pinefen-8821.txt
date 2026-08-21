@@ -1,0 +1,6 @@
+BILL OF LADING 8821
+Shipper: Kestrel Tooling (drop-ship)
+Consignee: Pinefen Supply Co., Bay 4
+
+Lines match RCV-10441 except Wren Clip: shipper says 6, we counted 4.
+Grey Moth driver would not wait for a recount.

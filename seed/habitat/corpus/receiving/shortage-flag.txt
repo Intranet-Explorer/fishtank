@@ -1,0 +1,5 @@
+SHORTAGE FLAG
+RCV-10441 / BOL 8821
+Wren Clip WR-CLIP
+Expected 6, counted 4.
+Vendor contact is a voicemail that says "you've reached the wren line".

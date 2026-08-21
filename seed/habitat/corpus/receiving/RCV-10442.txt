@@ -1,0 +1,10 @@
+PINEFEN SUPPLY — RECEIVING TICKET
+Ticket: RCV-10442
+Dock: 1
+Carrier: in-house van
+
+    80    KS-4408  Hinge Pin 12mm
+    80    KS-4401  Hinge Pin 8mm
+     2    NT-90    Nettle strap 90cm
+
+No exceptions. Pallet wrap intact.

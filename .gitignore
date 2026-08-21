@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.env
+observatory.sqlite
+observatory.sqlite-*
+webcache/*
+!webcache/.gitkeep
+logs/*
+!logs/.gitkeep
+run/
+.DS_Store
+
+# Live tank. Restore with ./scripts/fresh.sh
+/habitat/
+/private/**
+!/private/alpha/
+!/private/bravo/
+!/private/alpha/.gitkeep
+!/private/bravo/.gitkeep
+
+# consolidated archive of prior copies and run data - never commit
+_archive/
+
+# sandbox mount artefacts
+.fuse_hidden*

@@ -1,0 +1,6 @@
+KS-4401 Hinge Pin 8mm
+Material: 1018 steel, zinc clear
+Length: 8mm pin, 24mm overall with head
+Head: pan, 2.5mm
+Fits: cabinet hinge C-series (Pinefen), also a lot of generic 8mm barrels
+Supersedes: KS-4390 (discontinued, too soft)

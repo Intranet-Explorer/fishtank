@@ -1,0 +1,14 @@
+PINEFEN SUPPLY — RECEIVING TICKET
+Ticket: RCV-10441
+Dock: 2
+Carrier: Grey Moth Freight
+BOL: 8821
+
+QS  Qty   SKU      Desc
+--  ---   ------   ----
+    40    KS-4401  Hinge Pin 8mm
+    12    AL-220   Aero-Latch
+     4    WR-CLIP  Wren Clip   *** qty disputed by driver
+
+Counted by: J. Pell (stamp smudged)
+Exception: one carton of Wren Clip open, packing peanuts everywhere.

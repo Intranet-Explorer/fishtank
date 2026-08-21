@@ -1,0 +1,5 @@
+same as ks-4401-spec.txt? not quite.
+
+some bins labeled "8mm pin" have KS-4401 mixed with leftover KS-4390.
+4390 bends. 4401 does not (as much).
+look for the zinc color: 4390 is yellower.

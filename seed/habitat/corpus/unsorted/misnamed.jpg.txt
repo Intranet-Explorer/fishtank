@@ -1,0 +1,5 @@
+this is not a jpeg. it is a text file named like a photo so it would
+sit at the bottom of a sorted-by-type list.
+
+contents of the "photo": a whiteboard with "FOGBOX = ???" and a drawing
+of a bird that might be a wren.

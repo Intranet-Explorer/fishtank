@@ -1,0 +1,5 @@
+maybe:
+print new bin labels
+find the Wren Clip drawing
+throw out the mug
+do not throw out the mug if it is pell's

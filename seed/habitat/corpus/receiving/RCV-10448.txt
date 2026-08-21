@@ -1,0 +1,10 @@
+PINEFEN SUPPLY — RECEIVING TICKET
+Ticket: RCV-10448
+Dock: 2
+Carrier: Grey Moth Freight
+
+     1    FG-12    Fogbox 12
+
+Note from dock: "this is a cardboard box labeled Fogbox 12 containing
+another cardboard box labeled 'do not open until calibration'.
+We did not open it. It is on the quarantine shelf."

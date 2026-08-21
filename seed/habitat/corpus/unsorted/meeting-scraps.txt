@@ -1,0 +1,7 @@
+from the monday standup that was not a standup
+
+pell: fogbox is not a product we sell
+mara: it is on the catalog fragment
+pell: the catalog fragment is a fragment
+mara: then why did we receive one
+pell: that is a different meeting
